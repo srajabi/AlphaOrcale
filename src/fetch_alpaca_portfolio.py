@@ -31,7 +31,7 @@ def fetch_portfolio():
 
 | Ticker | Quantity | Market Value | Current Price | Avg Entry Price | Unrealized P/L |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-"
+"""
 
         if not positions:
             md_content += "| - | - | - | - | - | No open positions |\n"
