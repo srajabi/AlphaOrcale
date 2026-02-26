@@ -1,0 +1,10 @@
+Ticker,Sector,Notes
+MSFT,Technology,Core hold
+TSLA,Consumer Discretionary,High volatility swing trade
+XLF,Financials,Sector ETF
+XLE,Energy,Sector ETF
+TLT,Bonds,Interest rate proxy
+GLD,Commodity,Gold tracking
+EWC,International,Canada TSX proxy
+VGK,International,Europe proxy
+EWA,International,Australia proxy

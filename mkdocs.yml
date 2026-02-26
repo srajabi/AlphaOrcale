@@ -1,0 +1,14 @@
+site_name: AlphaOracle
+site_description: Automated AI Investment Analyst & Portfolio Manager
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: indigo
+    accent: indigo
+nav:
+  - Daily Synthesis: index.md
+  - Reports:
+    - "Risk Manager": reports/risk.md
+    - "Technical Analyst": reports/tech.md
+    - "Macro Strategist": reports/macro.md
