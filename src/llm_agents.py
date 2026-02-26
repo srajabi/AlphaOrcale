@@ -65,9 +65,9 @@ def run_agent(role, prompt, model, context):
     except Exception as e:
         print(f"Error running {role} with {model}: {e}")
         if "gemini-1.5" in model:
-            print(f"Falling back to gemini/gemini-pro for {role}...")
+            print(f"Falling back to gemini/gemini-1.5-flash for {role}...")
             try:
-                fallback_model = "gemini/gemini-pro"
+                fallback_model = "gemini/gemini-1.5-flash"
                 response = litellm.completion(
                     model=fallback_model,
                     messages=[
@@ -157,16 +157,16 @@ The JSON format MUST be exactly this structure:
     os.makedirs('docs', exist_ok=True)
     os.makedirs('docs/reports', exist_ok=True)
     
-    with open(f'docs/reports/{date_str}_risk.md', 'w') as f:
+    with open('docs/reports/risk.md', 'w') as f:
         f.write(f"# Risk Manager Report - {date_str}\n\n{risk_report}")
         
-    with open(f'docs/reports/{date_str}_tech.md', 'w') as f:
+    with open('docs/reports/tech.md', 'w') as f:
         f.write(f"# Technical Analyst Report - {date_str}\n\n{tech_report}")
         
-    with open(f'docs/reports/{date_str}_macro.md', 'w') as f:
+    with open('docs/reports/macro.md', 'w') as f:
         f.write(f"# Macro Strategist Report - {date_str}\n\n{macro_report}")
         
-    with open(f'docs/index.md', 'w') as f:
+    with open('docs/index.md', 'w') as f:
         f.write(f"# AlphaOracle Daily Synthesis - {date_str}\n\n{display_report}")
         
     print("Reports generated successfully.")
