@@ -5,10 +5,10 @@ from datetime import datetime
 
 # Defaulting to Gemini 1.5 Pro via LiteLLM for all agents for simplicity,
 # but can be overridden by environment variables to use different models.
-RISK_MODEL = os.getenv("RISK_MODEL", "gemini/gemini-1.5-pro-latest")
-TECH_MODEL = os.getenv("TECH_MODEL", "gemini/gemini-1.5-pro-latest")
-MACRO_MODEL = os.getenv("MACRO_MODEL", "gemini/gemini-1.5-pro-latest")
-PM_MODEL = os.getenv("PM_MODEL", "gemini/gemini-1.5-pro-latest")
+RISK_MODEL = os.getenv("RISK_MODEL", "gemini/gemini-1.5-pro")
+TECH_MODEL = os.getenv("TECH_MODEL", "gemini/gemini-1.5-pro")
+MACRO_MODEL = os.getenv("MACRO_MODEL", "gemini/gemini-1.5-pro")
+PM_MODEL = os.getenv("PM_MODEL", "gemini/gemini-1.5-pro")
 
 def load_text_file(filepath):
     if os.path.exists(filepath):
