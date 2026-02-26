@@ -3,12 +3,12 @@ import json
 import litellm
 from datetime import datetime
 
-# Defaulting to Gemini 1.5 Pro via LiteLLM for all agents for simplicity,
+# Defaulting to Gemini 2.0 Flash via LiteLLM for all agents for simplicity,
 # but can be overridden by environment variables to use different models.
-RISK_MODEL = os.getenv("RISK_MODEL", "gemini/gemini-1.5-pro")
-TECH_MODEL = os.getenv("TECH_MODEL", "gemini/gemini-1.5-pro")
-MACRO_MODEL = os.getenv("MACRO_MODEL", "gemini/gemini-1.5-pro")
-PM_MODEL = os.getenv("PM_MODEL", "gemini/gemini-1.5-pro")
+RISK_MODEL = os.getenv("RISK_MODEL", "gemini/gemini-2.0-flash")
+TECH_MODEL = os.getenv("TECH_MODEL", "gemini/gemini-2.0-flash")
+MACRO_MODEL = os.getenv("MACRO_MODEL", "gemini/gemini-2.0-flash")
+PM_MODEL = os.getenv("PM_MODEL", "gemini/gemini-2.0-flash")
 
 def load_text_file(filepath):
     if os.path.exists(filepath):
