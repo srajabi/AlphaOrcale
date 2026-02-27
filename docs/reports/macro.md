@@ -1,4 +1,4 @@
-# Macro Strategist Report - 2026-02-26
+# Macro Strategist Report - 2026-02-27
 
 Error: litellm.BadRequestError: GeminiException BadRequestError - {
   "error": {
